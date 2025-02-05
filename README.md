@@ -1,5 +1,8 @@
 # A Large-Scale Dataset of AI-Related Tweets: Structure and Descriptive Statistics
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.14811862.svg)](https://doi.org/10.5281/zenodo.14811862)
+
+
 A large-scale dataset of AI-related tweets, comprising over 7.5 million entries spanning from January 1, 2017, to July 19, 2021. The dataset captures various metadata attributes, including user interactions, engagement metrics, and linguistic properties. It serves as a valuable resource for researchers studying the evolution of AI discourse, social media engagement, and sentiment analysis. 
 
 **Specifications Table:**
