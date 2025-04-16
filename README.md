@@ -22,7 +22,6 @@ The dataset consists of 7,511,304 tweets, capturing various metadata features re
 
 ### **Key Variables:**
 - **Temporal Variables:** The dataset includes timestamps in both date and time format, allowing for time-series analysis of AI discussions.
-- **User Information:** Each tweet is associated with a unique user ID, username, and display name.
 - **Engagement Metrics:** The dataset captures the number of replies, retweets, and likes per tweet, with values ranging from zero to over 230,000 likes.
 - **Content Attributes:** The presence of hashtags, cashtags, URLs, photos, videos, and quote URLs enables a multimodal analysis of tweets.
 - **Retweet and Reply Structure:** Retweet status is recorded as a logical variable, and reply threads are mapped using a conversation ID.
