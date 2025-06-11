@@ -2,6 +2,15 @@
 
 [![DOI](https://zenodo.org/badge/926193933.svg)](https://zenodo.org/records/15230836)
 
+### Supplement to the following article
+
+> Kouloukoui, D., de Marcellis-Warin, N. & Warin, T. Balancing risks and benefits: public perceptions of AI through traditional surveys and social media analysis. AI & Soc (2025). https://doi.org/10.1007/s00146-025-02232-x
+
+Also in CSV format here:
+
+Kouloukoui, Daniel, Nathalie DE MARCELLIS-WARIN, and Thierry Warin. 2025. “Replication Data for: Balancing Risks and Benefits: Public Perceptions of AI through Traditional Surveys and Social Media Analysis.” Harvard Dataverse. https://doi.org/doi:10.7910/DVN/NHLEJL.
+
+### Description
 
 A large-scale dataset of AI-related tweets, comprising over 7.5 million entries spanning from January 1, 2017, to July 19, 2021. The dataset captures various metadata attributes, including user interactions, engagement metrics, and linguistic properties. It serves as a valuable resource for researchers studying the evolution of AI discourse, social media engagement, and sentiment analysis. 
 
