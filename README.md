@@ -27,7 +27,7 @@ A large-scale dataset of AI-related tweets, comprising over 7.5 million entries 
 | Data accessibility | Available upon request or in repositories |
 
 **Data Description:**
-The dataset consists of 7,511,304 tweets, capturing various metadata features relevant to AI-related discussions. The variables include tweet-specific attributes (e.g., tweet ID, creation timestamp, text content), user-specific details (e.g., user ID, username, name), engagement metrics (e.g., number of replies, retweets, likes), and contextual information such as mentions, hashtags, and embedded URLs. The dataset spans from January 2017 to July 2021, covering multiple time zones and language settings.
+The dataset consists of 893 076 tweets, capturing various metadata features relevant to AI-related discussions. The variables include tweet-specific attributes (e.g., tweet ID, creation timestamp, text content), user-specific details (e.g., user ID, username, name), engagement metrics (e.g., number of replies, retweets, likes), and contextual information such as mentions, hashtags, and embedded URLs. The dataset spans from January 2017 to July 2021, covering multiple time zones and language settings.
 
 ### **Key Variables:**
 - **Temporal Variables:** The dataset includes timestamps in both date and time format, allowing for time-series analysis of AI discussions.
@@ -37,9 +37,13 @@ The dataset consists of 7,511,304 tweets, capturing various metadata features re
 - **Linguistic Features:** The dataset includes the original language of the tweet, with potential for further translation and sentiment analysis.
 
 ### **Descriptive Statistics:**
-The dataset spans a period from January 1, 2017, to July 19, 2021, with a median date of April 20, 2019. The tweets originate from multiple time zones, with an average offset of -423.1 minutes. The engagement statistics show that the mean number of replies per tweet is 0.1395, while the mean retweets count is 2.0256 and the mean likes count is 2.7038. The maximum values observed in these categories are substantial, with the most-liked tweet accumulating 231,879 likes, the most-retweeted post reaching 78,672 retweets, and the most-replied-to tweet garnering 11,736 replies. The dataset contains binary indicators for retweets (FALSE for all), as well as fields related to media content, such as photos, videos, and quote URLs. The presence of multimedia elements suggests potential applications for visual content analysis.
+The dataset spans a period from January 1, 2017, to July 19, 2021, with a median date of April 20, 2019. The tweets originate from multiple time zones, with an average offset of -423.1 minutes.
+The dataset contains binary indicators for retweets (FALSE for all), as well as fields related to media content, such as photos, videos, and quote URLs.
+The presence of multimedia elements suggests potential applications for visual content analysis.
 
-Additionally, the dataset comprises 36 variables. The **date** column is formatted as an `IDate` object, ensuring efficient handling of temporal data. The **timezone** variable, stored as an integer, records offsets from UTC, with values primarily clustered around -400 minutes. The **source** and **geo** fields predominantly contain `NA` values, reflecting missing geolocation metadata. The **hashtags** and **mentions** fields are stored as character vectors containing JSON-like lists of tagged terms and user references, enabling advanced textual analysis. The dataset contains 1,032,267 unique users, further illustrating the diversity of engagement and participation in AI-related discussions on Twitter.
+Additionally, the dataset comprises 19 variables. The **date** column is formatted as an `IDate` object, ensuring efficient handling of temporal data.
+The **timezone** variable, stored as an integer, records offsets from UTC, with values primarily clustered around -400 minutes.
+The **hashtags** and **mentions** fields are stored as character vectors containing JSON-like lists of tagged terms and user references, enabling advanced textual analysis.
 
 **Potential Applications:**
 This dataset provides a robust foundation for various research applications, including but not limited to:
