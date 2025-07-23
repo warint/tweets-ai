@@ -10,23 +10,35 @@ Also in CSV format here:
 
 Kouloukoui, Daniel, Nathalie DE MARCELLIS-WARIN, and Thierry Warin. 2025. “Replication Data for: Balancing Risks and Benefits: Public Perceptions of AI through Traditional Surveys and Social Media Analysis.” Harvard Dataverse. https://doi.org/doi:10.7910/DVN/NHLEJL.
 
-### Description
+### Data Description
 
-A large-scale dataset of AI-related tweets, comprising over 7.5 million entries spanning from January 1, 2017, to July 19, 2021. The dataset captures various metadata attributes, including user interactions, engagement metrics, and linguistic properties. It serves as a valuable resource for researchers studying the evolution of AI discourse, social media engagement, and sentiment analysis. 
+The dataset covers the period from 1 January 2017 to 19 July 2021, with a median tweet date of 20 April 2019. Binary indicators identify the presence of media elements such as photographs, videos, and quoted URLs. A total of thirty-six raw variables were initially collected; in compliance with Twitter’s data redistribution policy and relevant data-protection regulations, nineteen non-sensitive variables were retained for public release. Information on hashtags and user mentions is encoded as JSON-formatted vectors.
 
-**Specifications Table:**
 
-| Specification | Details |
-|--------------|---------|
-| Subject Area | Social Media Analytics, Natural Language Processing, Data Science |
-| Type of Data | Structured text data |
-| How data was acquired | Extracted from Twitter API |
-| Data format | CSV (original), converted to QS format |
-| Experimental factors | Not applicable |
-| Experimental features | Descriptive metadata, user interactions, and engagement metrics |
-| Data accessibility | Available upon request or in repositories |
+## Table 1. Variables and their descriptions
 
-**Data Description:**
+| Variable          | Description                                  |
+| -------------------------- | -------------------------------------------- |
+| `id`              | Unique tweet identifier                      |
+| `conversation_id` | Identifier for the conversation thread       |
+| `created_at`      | Date‑time stamp with timezone                |
+| `date`            | Calendar date (YYYY‑MM‑DD)                   |
+| `time`            | Time of day (HH\:MM\:SS)                     |
+| `timezone`        | Offset from UTC (minutes)                    |
+| `tweet`           | Text content of the tweet                    |
+| `language`        | ISO 639‑1 language code                      |
+| `urls`            | External links                               |
+| `photos`          | Image URLs                                   |
+| `replies_count`   | Number of replies                            |
+| `retweets_count`  | Number of retweets                           |
+| `likes_count`     | Number of likes                              |
+| `hashtags`        | Hashtags (JSON vector)                       |
+| `cashtags`        | Stock tickers                                |
+| `retweet`         | Flag identifying retweets                    |
+| `quote_url`       | URL of quoted tweet                          |
+| `video`           | Flag identifying embedded video              |
+| `thumbnail`       | Thumbnail URL for video                      |
+
 The dataset consists of 893 076 tweets, capturing various metadata features relevant to AI-related discussions. The variables include tweet-specific attributes (e.g., tweet ID, creation timestamp, text content), user-specific details (e.g., user ID, username, name), engagement metrics (e.g., number of replies, retweets, likes), and contextual information such as mentions, hashtags, and embedded URLs. The dataset spans from January 2017 to July 2021, covering multiple time zones and language settings.
 
 ### **Key Variables:**
@@ -34,16 +46,11 @@ The dataset consists of 893 076 tweets, capturing various metadata features rele
 - **Engagement Metrics:** The dataset captures the number of replies, retweets, and likes per tweet, with values ranging from zero to over 230,000 likes.
 - **Content Attributes:** The presence of hashtags, cashtags, URLs, photos, videos, and quote URLs enables a multimodal analysis of tweets.
 - **Retweet and Reply Structure:** Retweet status is recorded as a logical variable, and reply threads are mapped using a conversation ID.
-- **Linguistic Features:** The dataset includes the original language of the tweet, with potential for further translation and sentiment analysis.
 
 ### **Descriptive Statistics:**
 The dataset spans a period from January 1, 2017, to July 19, 2021, with a median date of April 20, 2019. The tweets originate from multiple time zones, with an average offset of -423.1 minutes.
 The dataset contains binary indicators for retweets (FALSE for all), as well as fields related to media content, such as photos, videos, and quote URLs.
 The presence of multimedia elements suggests potential applications for visual content analysis.
-
-Additionally, the dataset comprises 19 variables. The **date** column is formatted as an `IDate` object, ensuring efficient handling of temporal data.
-The **timezone** variable, stored as an integer, records offsets from UTC, with values primarily clustered around -400 minutes.
-The **hashtags** and **mentions** fields are stored as character vectors containing JSON-like lists of tagged terms and user references, enabling advanced textual analysis.
 
 **Potential Applications:**
 This dataset provides a robust foundation for various research applications, including but not limited to:
@@ -60,5 +67,5 @@ This dataset represents a significant contribution to social media analytics, pa
 The authors acknowledge the role of Twitter API in data collection and emphasize compliance with ethical guidelines in handling social media data.
 
 **Data Availability:**
-The dataset is available here with an MIT License.
+The dataset is available here with a CC-BY-NC license.
 
